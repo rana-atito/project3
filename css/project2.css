@@ -1,0 +1,304 @@
+:root
+{
+    --main-color:#331a54;
+}
+*{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+/*stat container*/
+.container{
+    width: 1170px;
+    padding-left: 109px;
+    padding-right: 109px;
+    margin: auto;
+}
+/*end container*/
+/*start settings box*/
+.settings-box
+{
+    position: fixed;
+    top: 0px;                   
+    left: -200px;
+    width: 200px;                
+    background-color: #eeeeee59;  
+    z-index: 1000;
+    min-height: 100vh;
+    transition: .3s;
+
+}
+.settings-box.open /* m4 48al 3ala al site lma bktn gnd settings-box "open" m4 bttft7  */
+{
+    left: 0px;
+}
+.settings-box .fa-angle-double-right 
+{
+    position: absolute;
+    right: -41px;
+    font-size: 40px;
+    color: #331a54;
+    top: 50px;
+    padding: 0px 3px;
+    text-align: center;
+    cursor: pointer;              /*by5le al mouse 3ala 4akl 2ed lma n4awr 3leh */
+ 
+}
+/*start settings container*/
+.settings-box .option-box {
+    padding: 15px;
+    background: #eee;
+    margin: 8px;
+    
+    
+}
+.settings-box .option-box h4{
+    margin: 0px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+
+}
+.settings-box .option-box .colors-list{
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.settings-box .option-box .colors-list li{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;         /*5lehon gnb ba3d*/
+    border: 2px solid white;
+}
+.settings-box .option-box .colors-list li.active{
+    background-color: #fff;
+}
+.settings-box .option-box .colors-list li:first-child{
+    background-color: var(--main-color);
+}
+.settings-box .option-box .colors-list li:nth-child(2){
+    background-color: green;
+}
+.settings-box .option-box .colors-list li:nth-child(3){
+    background-color: red;
+}
+
+.settings-box .option-box .colors-list li:nth-child(4){
+    background-color: blue;
+}
+
+.settings-box .option-box .colors-list li:nth-child(5){
+    background-color: yellow;
+}
+.random-backgrounds{
+    text-align: center;
+    margin: 13px;
+    margin-bottom: 0px;
+}
+.random-backgrounds .yes,
+.random-backgrounds .no{
+    background-color: #0000001f;
+    margin: 0px;
+    padding: 5px;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 50px; 
+    cursor: pointer;
+}
+.random-backgrounds span.active{
+    opacity: .5;
+}
+
+/*end settings container*/
+/*end settings box*/
+.landing-page
+{
+    min-height: 100vh; /*34an al sora tkml m3aya l25er al saf7a */
+    background-image: url(../images/project2/01.png);
+    background-size: cover;
+    position: relative;
+    transition: .3s;
+}
+.landing-page .overlay
+{
+    background-color:rgba(0, 0, 1, 0.16);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    z-index: 1;
+}
+.header-area
+{
+    z-index:2;
+    position: relative;
+    color: white;
+    display: flex;
+    
+}
+.header-area .logo
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 15px; 
+    width: 300px;
+    height: 15px;
+}
+.header-area .links
+{
+    
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+.header-area .links li
+{
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+
+}
+.header-area .links li a
+{
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+.header-area .links li a:hover,
+.header-area .links li a.active
+{
+    color: var(--main-color);
+}
+.introduction-text
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+.introduction-text h1
+{
+    font-size: 35px;
+    color: var(--main-color);
+}
+.introduction-text b
+{
+    line-height: 1.6;
+    font-size: 20px;
+    color: var(--main-color);
+
+}
+/*start about us*/
+.about-us{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+}
+.about-us .info-box{
+    flex: 1;
+    padding-top: 20px;
+
+}
+.about-us .info-box h2{
+    font-weight: bold;
+    color: var(--main-color);
+
+}
+.about-us .info-box b{
+    line-height: 1.8;
+    color: #767676;
+}
+.about-us .img-box{
+    flex: 1;
+    text-align: center;
+}
+.about-us .img-box img{
+    width: 400px;
+}
+
+/*end about us*/
+/*start skills*/
+.skills{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+}
+.skills h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    margin: 0 0 50px;
+    text-align: center;
+}
+.skills .skill-box{
+    background-color: white;
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+}
+.skills .skill-box .skill-name{
+    font-weight: bold;
+    width: 140px;
+    text-align: center;
+    line-height: 30px;
+}
+.skills .skill-box .skill-progress{
+    height: 30px;
+    width: 100%;
+    background-color: #f7f5f5;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+
+}
+.skills .skill-box .skill-progress span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    transition:5s;
+
+}
+/*end skills*/
+/*start gallery*/
+.gallery{
+ padding-top: 50px;
+ padding-bottom: 50px;
+}
+.gallery h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    margin: 0 0 50px;
+    text-align: center;
+}
+.gallery .img-box{
+    text-align: center;
+}
+.gallery .img-box img{
+    width: 200px;
+    padding: 3px;
+    background-color: #f6f6f6;
+    border: 1px solid #ccc;
+    margin: 5px;
+    cursor: pointer;
+
+
+/*start gallery*/

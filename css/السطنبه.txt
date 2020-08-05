@@ -1,0 +1,9 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>my second project </title>
+    <link rel="stylesheet" href="css/all.min.css"/>  <!--de maktabet al icons -->
+    <link rel="stylesheet" href="css/project2.css" />
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" >
+    
+</head>

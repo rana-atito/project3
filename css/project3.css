@@ -1,0 +1,205 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:rgb(255,103,103) ; 
+
+}
+.container{
+    padding: 20px;
+    padding-left:80px;
+    padding-right: 80px;
+}
+/*start navbar */
+.page{
+    background: rgb(255,241,220);
+    overflow: hidden;
+    width: 1150px;
+    height: 800px;
+    margin: 141px;
+    border: 5px solid black;
+    border-radius: 50px;
+}
+.header {
+    display: flex;                  /*34an yego gnd ba333d (logo & links)*/
+}
+.header .logo{
+    padding-top: 21px;
+    width: 150px;
+}
+   
+.header .logo img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin: 3px;
+}
+.header .logo .food{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bold;
+       
+
+}
+.header .logo .fusion{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    line-height: 2;
+    font-size: 11px;
+    color: #0606066b;
+   /* padding-left: 40px;*/
+}
+.header .links
+{
+    list-style: none;
+    width: 100%; 
+    text-align: right;
+   
+    
+}
+.header .links li
+{
+    font-size: 30px;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 30px;
+}
+.header .links .login
+{
+    background: rgb(36,160,123);
+    padding: 9px;
+    margin-left: 137px;
+    border-radius: 18px;
+    width: 71px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.header .links i
+{
+    font-size: 34px;
+    text-align: right;
+    margin-left: 20px;
+    cursor: pointer;
+}
+/*end navbar*/
+/*start content*/
+.content{
+    display: flex;     /*bt5le al clam gnb al sora */
+}
+.content .left h1
+{
+    margin: 0.67em 0;
+    margin-top: 95px;
+    font-size: 66px;
+    font-family: serif;
+    margin-bottom: 20px;
+
+}
+
+.content .left .caption
+{
+    letter-spacing: 8px;
+    font-size: 21px;
+    color: #000000a1;
+}
+.content .content-img img
+{
+    width: 400px;
+    height: 400px;
+    margin: 52px;
+    margin-top: 111px;
+    border-radius: 50%;
+}
+/*start icons*/
+.content .icons
+{
+display: flex;
+}
+.content .icons .icon
+{
+    margin: 4px;
+    background: white;
+    border-radius: 40px;
+    margin-top: 43px
+}
+.content .icons .active
+{
+    margin: 4px;
+    background-color:rgb(255,193,96) ; 
+    border-radius: 40px;
+    margin-top: 43px
+}
+.content .icons .icon img
+{
+    width: 50px;
+    
+    height: 50px;
+    border-radius: 50%;
+    margin: 8px;
+
+}
+.content .icons .icon h5{
+    text-align: center;
+    margin-top: 10px;
+    color: #0000008f;
+    font-size: 12px;
+}
+/*end icons*/
+.left .text
+{
+    background: white;
+    width: 225px;
+    height: 50px;
+    border-radius: 39px;
+    margin-top: 30px;
+}
+.left .text .enter
+{
+    margin: 15px;
+    margin-top: 18px;
+    font-size: 11px;
+    color: #0000006b;
+    float: left;
+
+}
+.left .text .pointer
+{
+    margin: 8px;
+    float: right;
+    background: rgb(36,184,130);
+    width: 68px;
+    height: 34px;
+    border-radius: 18px;
+}
+.left .text .pointer .fa-long-arrow-right
+{
+    font: 10px;
+    color: white;
+    float: right;
+}
+.left .brands
+{
+    margin-top: 97px;
+}
+.left .brands .fab
+{
+    font-size: 28px;
+    margin: 10px;
+    border-radius: 40px;
+}
+
+.content .salad
+{
+
+}
+
+/*end content*/
+
+
+.arrow-last {
+
+}
